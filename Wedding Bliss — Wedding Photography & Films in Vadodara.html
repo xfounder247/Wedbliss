@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wedding Bliss — Wedding Photography & Films in Vadodara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--card:#fff;--ink:#3b2230;--mute:#7b6670;--maroon:#7a1f3d;--rose:#b5476b;--gold:#c9a24b;--blush:#fcf3f3;--line:#ecdcd6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,sans-serif;line-height:1.7;font-weight:300}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;font-weight:700}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--maroon);font-weight:700}.logo b{color:var(--gold)}
+nav a{margin-left:22px;font-size:.92rem;font-weight:500;color:var(--mute);padding:4px 0;border-bottom:2px solid transparent}
+nav a.on,nav a:hover{color:var(--maroon);border-color:var(--gold)}
+#burger{display:none;background:none;border:0;font-size:1.7rem;color:var(--maroon)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--maroon),var(--rose));color:#fff;border:0;border-radius:40px;padding:12px 28px;font:500 .95rem Poppins;cursor:pointer;box-shadow:0 8px 20px rgba(122,31,61,.25);transition:.25s}
+.btn:hover{transform:translateY(-2px)}.btn.alt{background:transparent;color:var(--maroon);border:1.5px solid var(--gold);box-shadow:none}
+.btn.sm{padding:8px 20px;font-size:.85rem}
+.wrap{max-width:1150px;margin:auto;padding:70px 20px}
+.hero{padding:50px 20px 20px;background:#fff}.hs{max-width:1150px;margin:auto;display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);color:var(--maroon)}.hero p{color:var(--mute);margin:18px 0 28px;font-size:1.08rem;max-width:520px}.cta{text-align:center;color:#fff;padding:70px 20px;background:linear-gradient(135deg,var(--maroon),var(--rose))}.cta p{margin:12px 0 22px}.cta h2{font-size:2.3rem}
+.tag{letter-spacing:.3em;text-transform:uppercase;font-size:.78rem;color:var(--gold);font-weight:500}
+.pic{border-radius:16px;overflow:hidden;aspect-ratio:400/260;margin-bottom:16px;background:var(--blush)}.pic svg,.art svg{width:100%;height:100%;display:block}.diff{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.diff .card{padding:22px}.diff s{color:#a08c93;display:block;font-size:.9rem}.diff b{color:var(--maroon);font-weight:500}.stars{color:var(--gold);letter-spacing:3px}.who{margin-top:14px;font-weight:500;color:var(--maroon);font-size:.9rem}.cap{padding:12px 4px 0;font-weight:500;color:var(--maroon)}
+.sec-h{text-align:center;margin-bottom:44px}.sec-h h2{font-size:clamp(1.8rem,4vw,2.6rem);color:var(--maroon);margin-top:6px}.sec-h p{color:var(--mute);max-width:620px;margin:10px auto 0}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(122,31,61,.12)}
+.ico{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;background:var(--blush);margin-bottom:16px}
+.card h3{font-size:1.25rem;margin-bottom:8px;color:var(--maroon)}.card p{color:var(--mute);font-size:.93rem}
+.band{background:var(--blush)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center}
+.stats b{font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--maroon);display:block}
+.split{display:grid;gap:44px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}
+.art{aspect-ratio:4/5;border-radius:200px 200px 24px 24px;overflow:hidden;box-shadow:0 20px 50px rgba(122,31,61,.18)}
+.page{display:none;animation:f .5s}.page.on{display:block}@keyframes f{from{opacity:0;transform:translateY(12px)}}
+.pagehead{text-align:center;color:var(--maroon);padding:70px 20px;background:var(--blush);border-bottom:1px solid var(--line)}.pagehead h1{font-size:clamp(2rem,5vw,3.2rem)}
+/* accordion */
+.acc{max-width:900px;margin:auto;display:grid;gap:16px}
+.acc details{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:20px 24px;font:700 1.15rem 'Playfair Display',serif;color:var(--maroon)}
+.acc summary::-webkit-details-marker{display:none}.acc summary::after{content:'+';margin-left:auto;font-size:1.6rem;color:var(--gold);transition:.3s}
+.acc details[open] summary::after{transform:rotate(45deg)}.acc details[open]{box-shadow:0 14px 36px rgba(122,31,61,.12)}
+.acc .ico{margin:0;width:46px;height:46px;font-size:1.3rem;flex:none}
+.body{padding:0 24px 26px}.body p{color:var(--mute);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}.chips span{background:var(--blush);padding:5px 14px;border-radius:30px;font-size:.84rem;font-weight:400}
+/* form */
+.form{display:grid;gap:14px}
+input,select,textarea{width:100%;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:400 .95rem Poppins}
+.row{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.contact-box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px}
+.soc a{display:inline-block;margin:6px 8px 0 0;padding:8px 18px;border:1px solid var(--gold);border-radius:30px;font-size:.88rem;color:var(--maroon)}
+.faq{max-width:800px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:14px 4px}.faq summary{cursor:pointer;font-weight:500}.faq p{color:var(--mute);padding-top:8px}
+footer{background:#3a0f20;color:#e9d6d0;padding:50px 20px 90px;text-align:center;font-size:.9rem}footer a{color:var(--gold);margin:0 8px}
+/* widget + modal */
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;gap:10px}
+.fab a,.fab button{width:54px;height:54px;border-radius:50%;border:0;display:grid;place-items:center;font-size:1.5rem;color:#fff;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.f-call{background:#2f7ed8}.f-wa{background:#25a244}.f-bk{background:var(--maroon)}
+#modal{position:fixed;inset:0;background:rgba(30,8,18,.65);z-index:80;display:none;place-items:center;padding:16px}
+#modal.on{display:grid}.mbox{background:var(--card);border-radius:22px;padding:28px;width:100%;max-width:480px;max-height:92vh;overflow:auto}
+.mbox h3{color:var(--maroon);font-size:1.5rem;margin-bottom:4px}.x{float:right;background:none;border:0;font-size:1.6rem;color:var(--mute);cursor:pointer}
+@media(max-width:820px){#burger{display:block}nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);display:none;flex-direction:column;padding:10px 20px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex}nav a{margin:0;padding:12px 0}.wrap{padding:50px 18px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="#home">Wedding <b>Bliss</b></a><button id="burger" aria-label="Menu">☰</button>
+<nav id="nav"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#vision">Mission &amp; Vision</a><a href="#contact">Contact</a></nav></div></header>
+<main id="app"></main>
+<footer><div class="logo" style="color:#fff">Wedding <b>Bliss</b></div><p style="margin:10px 0">Wedding photography &amp; films · Vadodara, Gujarat</p>
+<p><a href="https://www.instagram.com/wed_bliss" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/weddingbliss" target="_blank" rel="noopener">YouTube</a><a href="https://www.facebook.com/weareweddingbliss" target="_blank" rel="noopener">Facebook</a></p><p style="margin-top:14px;opacity:.7">© <span id="yr"></span> Wedding Bliss. All rights reserved.</p></footer>
+<div class="fab"><a class="f-call" id="fcall" aria-label="Call">📞</a><a class="f-wa" id="fwa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a><button class="f-bk" onclick="openBook()" aria-label="Book">📅</button></div>
+<div id="modal"><div class="mbox"><button class="x" onclick="closeBook()">×</button><h3>Book Your Date</h3><p style="color:var(--mute);font-size:.9rem;margin-bottom:16px">Share your details — we'll confirm on WhatsApp.</p>
+<div class="form"><input id="bn" placeholder="Your name"><input id="bp" placeholder="Phone number" inputmode="tel"><select id="bs"></select><div class="row"><input id="bd" type="date"><input id="bl" placeholder="Venue / City"></div><textarea id="bm" rows="3" placeholder="Tell us about your celebration"></textarea><button class="btn" onclick="submitBook()">Send Booking on WhatsApp</button></div></div></div>
+<script>
+// ===== EDIT THESE =====
+const PHONE="919999999999", PHONE_SHOW="+91 99999 99999", EMAIL="hello@weddingbliss.in", ADDRESS="Vadodara, Gujarat, India";
+// ======================
+const S=[
+["📷","Wedding Photography","Timeless, emotion-rich photographs of every glance, laugh and ritual — from stolen candid moments to beautifully posed family frames.",["Candid Photography","Traditional Photography","Couple Portraits","Family & Group Portraits","Wedding Day Photography","Multi-day Wedding Coverage"]],
+["🎬","Wedding Cinematography","Films that feel like cinema. Our team blends storytelling, music and cinematic grading into films you will replay for decades.",["Cinematic Videography","Traditional Videography","Wedding Teaser","Wedding Trailer","Wedding Highlights Film","Complete Wedding Film","Documentary Wedding Film","Ceremony / Full Event Edit"]],
+["💞","Pre-Wedding","Fall in love again before the big day. Relaxed, story-led shoots at carefully planned locations, with styling and concept guidance.",["Pre-Wedding Photography","Pre-Wedding Cinematic Film","Destination Pre-Wedding","Couple Portrait Shoot","Concept-based Pre-Wedding","Location & Shoot Planning"]],
+["🪔","Wedding Functions Coverage","Every function has its own mood. We cover each ritual and celebration so nothing from your multi-day festivities is missed.",["Engagement","Roka","Haldi","Mehndi","Sangeet","Cocktail","Wedding / Pheras","Reception","Vidaai","Other Wedding Events"]],
+["✨","Creative & Add-on Services","Add a little extra magic — aerial views, instant memories for guests and social-ready content delivered while the celebration is still on.",["Drone Photography & Videography","Photobooth","Live Screening","Same-Day / Express Edits","Instagram Reels","Social Media Content Creation","Wedding Content Creator"]],
+["📖","Albums & Print","Your story, printed to last. Handcrafted albums and fine-art prints in premium materials made to be passed down generations.",["Premium Wedding Albums","Parent Albums","Mini Albums","Coffee Table Albums","Photo Prints / Enlargements"]],
+["🎞️","Post-Production","Where raw moments become art — careful retouching, rich colour and sharp storytelling edits by our in-house editors.",["Professional Photo Editing","Cinematic Color Grading","Video Editing","Reels Editing","Teaser / Trailer Editing","Documentary Editing"]],
+["🍼","Other Photography Services","Life has many celebrations beyond weddings. We bring the same warmth and craft to your family milestones and brand stories.",["Engagement / Couple Shoots","Maternity Photography","Baby / Family Photography","Birthday & Private Events","Corporate Events","Commercial Photography & Videography"]],
+["💌","InviteCraft — E-Invites","Make the first impression unforgettable. Elegant digital invitations designed to match your wedding theme and shared in one tap.",["Wedding E-Invitation","Save the Date","Engagement Invitation","Video Invitation","Animated Invitation","WhatsApp / Digital Invitations"]]];
+const why=[["🎨","Artistic Storytelling","We shoot feelings, not just faces — every frame is composed to tell your story."],["🤝","Warm & Unobtrusive Team","Friendly crew that blends in so you and your family stay relaxed and natural."],["⚡","On-Time Delivery","Sneak peeks fast, express edits on request, and complete delivery as promised."],["🎥","Latest Gear","Cinema cameras, gimbals, drones and pro lighting for every light condition."],["🛡️","Backups & Safety","Dual-card recording and multiple backups so your memories are never at risk."],["💬","Transparent Planning","Clear packages, easy communication and a plan shaped around your ceremonies."]];
+const faqs=[["How early should we book?","For peak wedding season (Nov–Feb) we suggest booking 4–6 months ahead, though you can always ask about last-minute availability."],["Do you travel outside Vadodara?","Yes. We cover weddings across Gujarat and India, and destination weddings on request. Travel and stay are planned in your package."],["Can we customise a package?","Absolutely. Mix photography, films, drone, albums and add-ons to match your functions and budget."],["How long does delivery take?","Sneak peeks arrive quickly; full edited photos and films are delivered within the timeline agreed at booking. Express edits are available."],["What is needed to confirm a date?","Share your date and venue, then confirm with a booking advance. We will send a simple written agreement."]];
+const E=(s,t)=>`<div class="sec-h"><div class="tag">${s}</div><h2>${t[0]}</h2>${t[1]?`<p>${t[1]}</p>`:''}</div>`;
+const cards=a=>`<div class="grid">${a.map(x=>`<div class="card"><div class="ico">${x[0]}</div><h3>${x[1]}</h3><p>${x[2]}</p></div>`).join('')}</div>`;
+const faq=`<div class="faq">${faqs.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('')}</div>`;
+const PAL=[["#c9a24b","#7a1f3d"],["#7a1f3d","#2f1a3a"],["#f0a5b5","#b5476b"],["#e8a33d","#b5476b"],["#c9a24b","#b5476b"],["#8a2b4d","#c9a24b"],["#b5476b","#e9c46a"],["#e58aa0","#7a1f3d"],["#c9a24b","#8a2b4d"]];
+const MO=[`<rect x="110" y="80" width="180" height="120" rx="18" fill="#fff" opacity=".92"/><rect x="160" y="64" width="60" height="22" rx="6" fill="#fff"/><circle cx="200" cy="140" r="38" fill="#7a1f3d" opacity=".85"/><circle cx="200" cy="140" r="20" fill="#fff" opacity=".4"/>`,
+`<rect x="100" y="70" width="200" height="130" rx="10" fill="#fff" opacity=".92"/><path d="M180 108l56 27-56 27z" fill="#7a1f3d"/><g fill="#7a1f3d" opacity=".5"><rect x="108" y="78" width="10" height="8"/><rect x="132" y="78" width="10" height="8"/><rect x="258" y="78" width="10" height="8"/><rect x="282" y="78" width="10" height="8"/></g>`,
+`<circle cx="300" cy="70" r="34" fill="#fff" opacity=".5"/><path d="M0 220Q120 160 220 205T400 190V260H0Z" fill="#000" opacity=".18"/><circle cx="170" cy="120" r="14" fill="#fff"/><path d="M150 210q0-70 20-75 20 5 20 75z" fill="#fff"/><circle cx="215" cy="124" r="12" fill="#fff" opacity=".9"/><path d="M198 210q-4-62 17-66 21 4 17 66z" fill="#fff" opacity=".9"/>`,
+`<path d="M130 165q70 60 140 0z" fill="#fff"/><path d="M200 155q-26-36 0-76 26 40 0 76z" fill="#ffd36b"/>`,
+`<path d="M110 225V110Q110 50 200 50T290 110V225" fill="none" stroke="#fff" stroke-width="10"/><g fill="#fff" opacity=".85"><circle cx="130" cy="90" r="7"/><circle cx="160" cy="62" r="7"/><circle cx="200" cy="52" r="7"/><circle cx="240" cy="62" r="7"/><circle cx="270" cy="90" r="7"/></g>`,
+`<rect x="110" y="70" width="180" height="130" rx="8" fill="#fff" opacity=".92"/><rect x="124" y="84" width="72" height="102" fill="#7a1f3d" opacity=".25"/><rect x="204" y="84" width="72" height="46" fill="#7a1f3d" opacity=".25"/><rect x="204" y="138" width="72" height="48" fill="#7a1f3d" opacity=".4"/>`,
+`<circle cx="170" cy="140" r="50" fill="none" stroke="#fff" stroke-width="10"/><circle cx="230" cy="140" r="50" fill="none" stroke="#fff" stroke-width="10" opacity=".8"/><path d="M200 62l14 18-14 18-14-18z" fill="#fff"/>`,
+`<path d="M200 205C115 145 125 80 172 90c16 3 28 15 28 26 0-11 12-23 28-26 47-10 57 55-28 115z" fill="#fff" opacity=".92"/>`,
+`<rect x="100" y="80" width="200" height="130" rx="10" fill="#fff" opacity=".92"/><path d="M100 90l100 70 100-70" fill="none" stroke="#7a1f3d" stroke-width="6"/>`];
+const sc=i=>{i%=9;return `<svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true"><defs><linearGradient id="g${i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${PAL[i][0]}"/><stop offset="1" stop-color="${PAL[i][1]}"/></linearGradient></defs><rect width="400" height="260" fill="url(#g${i})"/>${MO[i]}</svg>`};
+const gallery=`<section class="band"><div class="wrap">${E('Moments we love',['A Glimpse of Our Work','Illustrative artwork — your real Wedding Bliss portfolio photos can replace these tiles.'])}<div class="grid">${[[2,"Golden-hour couple portraits"],[3,"Haldi & Mehndi stories"],[4,"The mandap & pheras"],[0,"Candid family moments"],[1,"Cinematic wedding films"],[5,"Heirloom albums"]].map(g=>`<div><div class="pic" style="margin:0">${sc(g[0])}</div><div class="cap">${g[1]}</div></div>`).join('')}</div></div></section>`;
+const df=[["One-size-fits-all packages","Custom packages built around your functions"],["Photo and video from separate vendors","One coordinated team for photo, film, albums &amp; invites"],["Only the main ceremony covered","Coverage for every function, from Roka to Vidaai"],["Weeks of waiting for a preview","Same-day / express edits and reels on request"],["Invitations from a different designer","InviteCraft e-invites that match your wedding theme"],["Raw files and no follow-up","Colour grading, albums, prints and after-care"]];
+const diffSec=`<section class="wrap">${E('Why we are different',['Not Just Another Photographer','Here is how Wedding Bliss goes beyond the usual studio.'])}<div class="diff">${df.map(d=>`<div class="card"><s>${d[0]}</s><b>✓ ${d[1]}</b></div>`).join('')}</div></section>`;
+/* REPLACE these sample reviews with real ones from your Google profile */
+const rv=[["Every ritual was covered beautifully, and the team made our families feel completely at ease.","Couple, Vadodara"],["Our pre-wedding film felt like a movie. Friends keep asking who made it!","Bride, Gujarat"],["Haldi to reception, nothing was missed. The album is something we will treasure.","Groom, Vadodara"],["Quick teasers and reels while the celebration was still on. Super professional.","Couple, Ahmedabad"],["The e-invite and save-the-date matched our theme perfectly.","Bride, Vadodara"],["Calm, friendly and creative. They captured moments we did not even notice.","Bride's mother, Vadodara"]];
+const revSec=`<section class="band"><div class="wrap">${E('Reviews',['Loved by Our Couples','Kind words from the families we have celebrated with.'])}<div class="grid">${rv.map(r=>`<div class="card"><div class="stars">★★★★★</div><p style="margin-top:10px;font-style:italic">“${r[0]}”</p><div class="who">— ${r[1]}</div></div>`).join('')}</div><p style="text-align:center;margin-top:30px"><a class="btn alt" href="https://share.google/t3BPdLhlrdFWpEAKU" target="_blank" rel="noopener">Read all reviews on Google</a></p></div></section>`;
+const P={
+home:`<section class="hero"><div class="hs"><div><div class="tag">Wedding Photography &amp; Films · Vadodara</div><h1>Where Every Moment Becomes a Memory</h1><p>We are Wedding Bliss — storytellers who turn your big day into timeless photographs and cinematic films.</p><button class="btn" onclick="openBook()">Book Your Date</button> <a class="btn alt" href="#services">Explore Services</a></div><div class="art">${sc(2)}</div></div></section>
+<div class="band"><div class="wrap stats"><div><b>9</b>Service Lines</div><div><b>10+</b>Wedding Functions Covered</div><div><b>1</b>Team for Photo, Film &amp; Invites</div><div><b>100%</b>Passion &amp; Care</div></div></div>
+<section class="wrap">${E('What we do',['Everything for Your Wedding Story','From the first save-the-date to the final album, one team handles it all.'])}<div class="grid">${S.slice(0,6).map((s,i)=>`<div class="card"><div class="pic">${sc(i)}</div><div class="ico">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p><p style="margin-top:14px"><a class="btn sm" href="#services">View &amp; Book</a></p></div>`).join('')}</div></section>
+<section class="band"><div class="wrap split"><div class="art">${sc(6)}</div><div><div class="tag">Our approach</div><h2 style="color:var(--maroon);font-size:2.2rem;margin:8px 0 16px">Candid. Cinematic. Completely You.</h2><p style="color:var(--mute)">Every wedding in Vadodara and beyond has its own rhythm — the dhol at the baraat, the quiet moment before the pheras, the laughter on the sangeet floor. We listen first, plan around your rituals, and then quietly capture them as they unfold.</p><p style="color:var(--mute);margin:14px 0 22px">Our photographers and filmmakers work as one team, so your photos and films feel like parts of the same story.</p><a class="btn" href="#about">Meet Wedding Bliss</a></div></div></section>
+<section class="wrap">${E('Why couples choose us',['Made to Feel Effortless']) }${cards(why)}</section>${gallery}${diffSec}${revSec}
+<section class="band"><div class="wrap">${E('Your journey',['From Hello to Happily Ever After'])}${cards([["1️⃣","Share Your Date","Tell us your dates, functions and venue through the booking form or WhatsApp."],["2️⃣","Plan Together","We craft a package and shot plan around your rituals and style."],["3️⃣","We Capture","Our team covers every function with candid, traditional and cinematic eyes."],["4️⃣","Edit &amp; Deliver","Colour-graded photos, films and albums delivered with care."]])}</div></section>
+<section class="wrap">${E('Questions',['Frequently Asked'])}${faq}</section>
+<section class="cta"><div><h2 style="font-size:2.4rem">Your date is waiting.</h2><p>Check availability and reserve Wedding Bliss for your celebration.</p><button class="btn" onclick="openBook()">Book Now</button></div></section>`,
+services:`<div class="pagehead"><div class="tag">Our Services</div><h1>Crafted for Every Celebration</h1><p style="max-width:600px;margin:10px auto 0">Tap a service to explore what is included, then book it directly.</p></div>
+<section class="wrap"><div class="acc">${S.map((s,i)=>`<details ${i==0?'open':''}><summary><span class="ico">${s[0]}</span>${i+1}. ${s[1]}</summary><div class="body"><div class="pic">${sc(i)}</div><p>${s[2]}</p><div class="chips">${s[3].map(c=>`<span>${c}</span>`).join('')}</div><button class="btn sm" onclick="openBook('${s[1].replace(/'/g,"\\'")}')">Book ${s[1]}</button></div></details>`).join('')}</div></section>
+<section class="band"><div class="wrap">${E('Bundle & save',['Not Sure Where to Start?','Mix and match any services — we will build a package around your functions and budget.'])}<p style="text-align:center"><button class="btn" onclick="openBook()">Get a Custom Package</button> <a class="btn alt" href="#contact">Talk to Us</a></p></div></section>`,
+about:`<div class="pagehead"><div class="tag">About Us</div><h1>The Team Behind Your Memories</h1></div>
+<section class="wrap split"><div class="art">${sc(0)}</div><div><div class="tag">Our story</div><h2 style="color:var(--maroon);font-size:2.2rem;margin:8px 0 16px">Born in Vadodara, Made for Love Stories</h2><p style="color:var(--mute)">Wedding Bliss began with a simple belief: a wedding is not one event but a hundred tiny feelings — and they deserve to be remembered exactly as they were. Based in Vadodara, we have grown into a full-service wedding studio covering photography, cinematography, pre-wedding shoots, albums and digital invitations.</p><p style="color:var(--mute);margin-top:14px">From intimate roka ceremonies to multi-day celebrations with sangeet, haldi, mehndi and reception, we bring the same calm, creative energy to every family we work with.</p></div></section>
+<section class="band"><div class="wrap">${E('What guides us',['Our Values']) }${cards([["❤️","Emotion First","We chase real feelings over perfect poses."],["🕊️","Respect for Tradition","We understand rituals and families, and cover them with care."],["🔍","Detail Obsessed","From jewellery close-ups to wide mandap frames."],["🌱","Always Learning","New techniques, new gear, new storytelling ideas every season."]])}</div></section>
+<section class="wrap">${E('Our process',['How We Work'])}${cards([["🗓️","Pre-Wedding Consultation","We understand your families, functions and favourite moments."],["🎯","Shot Planning","A tailored shot list and schedule so nothing is missed."],["🎥","Coverage","Photographers, cinematographers and drone pilots work together."],["🎨","Post-Production","Colour grading, retouching and storytelling edits."],["📦","Delivery","Online galleries, films, albums and prints, beautifully packaged."],["🤍","After-Care","We stay in touch for reprints, extra edits and anniversaries."]])}</section>
+<section class="band"><div class="wrap"><p style="text-align:center"><a class="btn" href="#contact">Say Hello</a></p></div></section>`,
+vision:`<div class="pagehead"><div class="tag">Mission &amp; Vision</div><h1>Why We Do What We Do</h1></div>
+<section class="wrap"><div class="grid"><div class="card"><div class="ico">🎯</div><h3>Our Mission</h3><p>To document every wedding with honesty, artistry and warmth — delivering photographs and films that carry the true emotion of the day, backed by dependable service from first call to final delivery.</p></div><div class="card"><div class="ico">🔭</div><h3>Our Vision</h3><p>To become Vadodara's most trusted wedding storytelling studio, known for creative excellence, genuine relationships and memories that stay vivid for generations.</p></div></div></section>
+<section class="band"><div class="wrap">${E('Our promise',['What You Can Count On'])}${cards([["✅","Honest Planning","Clear scope, fair packages and no last-minute surprises."],["⏱️","Respect for Time","Punctual teams and timely delivery."],["🎞️","Quality Craft","Careful editing and consistent colour across your story."],["🤲","Personal Care","A real team that treats your wedding like its own."],["🔒","Safe Memories","Secure backups of every file until delivery."],["🌟","Delight","Our goal is for you to smile every time you revisit your story."]])}</div></section>
+<section class="wrap" style="text-align:center"><h2 style="color:var(--maroon);margin-bottom:12px">Let's tell your story together</h2><button class="btn" onclick="openBook()">Book a Date</button></section>`,
+contact:`<div class="pagehead"><div class="tag">Contact Us</div><h1>Let's Plan Your Big Day</h1></div>
+<section class="wrap"><div class="split" style="align-items:start"><div class="contact-box"><h3 style="color:var(--maroon);font-size:1.6rem;margin-bottom:16px">Get in touch</h3><p>📍 ${ADDRESS}</p><p>📞 <a href="tel:+${PHONE}">${PHONE_SHOW}</a></p><p>✉️ <a href="mailto:${EMAIL}">${EMAIL}</a></p><p>🕙 Open daily · by appointment</p><div class="soc" style="margin-top:14px"><a href="https://www.instagram.com/wed_bliss" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/weddingbliss" target="_blank" rel="noopener">YouTube</a><a href="https://www.facebook.com/weareweddingbliss" target="_blank" rel="noopener">Facebook</a></div><p style="margin-top:18px"><a class="btn sm" target="_blank" rel="noopener" href="https://wa.me/${PHONE}">Chat on WhatsApp</a></p></div>
+<div class="contact-box"><h3 style="color:var(--maroon);font-size:1.6rem;margin-bottom:16px">Quick enquiry</h3><div class="form"><input id="cn" placeholder="Your name"><input id="cp" placeholder="Phone"><input id="cd" type="date"><textarea id="cm" rows="4" placeholder="Tell us about your wedding"></textarea><button class="btn" onclick="sendC()">Send via WhatsApp</button></div></div></div></section>
+<section class="band"><div class="wrap">${E('Before you ask',['Quick Answers'])}${faq}</div></section>`};
+const $=id=>document.getElementById(id);
+function route(){let h=(location.hash||'#home').slice(1);if(!P[h])h='home';$('app').innerHTML=`<div class="page on">${P[h]}</div>`;document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+h));$('nav').classList.remove('open');scrollTo(0,0);setMin()}
+function setMin(){const t=new Date().toISOString().split('T')[0];document.querySelectorAll('input[type=date]').forEach(d=>d.min=t)}
+function openBook(s){$('bs').innerHTML='<option value="">Select a service</option>'+S.map(x=>`<option${x[1]===s?' selected':''}>${x[1]}</option>`).join('');$('modal').classList.add('on');setMin()}
+function closeBook(){$('modal').classList.remove('on')}
+function wa(t){window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(t)}`,'_blank')}
+function submitBook(){const n=$('bn').value.trim(),d=$('bd').value;if(!n||!d||!$('bs').value){alert('Please add your name, a service and a date.');return}
+wa(`Hello Wedding Bliss! I'd like to book.\nName: ${n}\nPhone: ${$('bp').value}\nService: ${$('bs').value}\nDate: ${d}\nVenue: ${$('bl').value}\nNotes: ${$('bm').value}`);closeBook()}
+function sendC(){wa(`Hello Wedding Bliss!\nName: ${$('cn').value}\nPhone: ${$('cp').value}\nWedding date: ${$('cd').value}\n${$('cm').value}`)}
+$('fcall').href='tel:+'+PHONE;$('fwa').href='https://wa.me/'+PHONE+'?text='+encodeURIComponent('Hello Wedding Bliss!');$('yr').textContent=new Date().getFullYear();
+$('burger').onclick=()=>$('nav').classList.toggle('open');$('modal').onclick=e=>{if(e.target.id=='modal')closeBook()};
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
